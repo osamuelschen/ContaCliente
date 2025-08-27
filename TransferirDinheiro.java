@@ -3,9 +3,11 @@ public class TransferirDinheiro {
     private Conta contaDestino;
     private double valor;
 
-    public TransferirDinheiro(Conta contaOrigem, Conta contaDestino, double valor) {
+    public TransferirDinheiro(Conta contaOrigem, Conta contaDestino) {
         this.contaOrigem = contaOrigem;
         this.contaDestino = contaDestino;
+    }
+    public void setValor(double valor) {
         this.valor = valor;
     }
     public void transferir() {
